@@ -1,0 +1,49 @@
+{{define "layout"}}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Yogahub</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
+    <link rel="stylesheet" href="/public/main.css">
+    </head>
+  <body>
+    <div class="page">
+      <header>
+        <ul class="menu-bar">
+          <li class="menu-bar__item">
+            <a href="/" class="menu-bar__item--title">Yoga Hub</a>
+          </li>
+          <li class="menu-bar__item">
+            <a href="/admin" class="menu-bar__item--link">Admin</a>
+          </li>
+          <li class="menu-bar__item">
+            <a href="/login" class="menu-bar__item--link">Login</a>
+          </li>
+        </ul>
+      </header>
+
+      <div class="container">
+        {{template "content" .}}
+      </div>
+
+    </div>
+  </body>
+
+  <script src="/public/scripts/geolocation.js"></script>
+  <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyBKz2rPCqEm4XguOun_Jn8Ts4EOFSoT9MU&libraries=places"></script>
+  <script src="/public/scripts/autocomplete.js"></script>
+  <script src="/public/scripts/slideMenu.js"></script>
+
+  <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-92460503-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+</html>
+{{end}}

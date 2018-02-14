@@ -1,0 +1,24 @@
+{{define "content"}}
+<h1>Poses</h1>
+
+<div>
+  <a href="/admin/poses/create">Create Pose</a>
+</div>
+
+<table class="posses-list">
+  {{range .}}
+    <tr class='poses-list__item'>
+      <td>
+        <img src="http://res.cloudinary.com/golizzard/image/upload/c_scale,w_120/v1518608108/{{.File}}" alt={{.TitleEn}} class="pose-thumb" >
+      </td>
+      <td class="name">{{.TitleEn}}</td>
+      <td class="name">{{.TitleSa}}</td>
+      <td>
+        <a href="/admin/pose/{{.ID}}">Edit</a>
+      </td>
+    </tr>
+  {{end}}
+  </table>
+
+</div>
+{{end}}

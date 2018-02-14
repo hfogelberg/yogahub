@@ -1,0 +1,74 @@
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+}
+
+.button-row {
+    margin-top: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-large {
+    border-radius: 10px;
+    margin: 0 1rem;
+    @media only screen and (max-width: 320px) {
+        font-size: 1.6rem;
+        width: 8rem;
+        height: 4rem;
+        font-weight: 400;
+    }
+
+    @media only screen and (min-width: 321px) and (max-width: 599px) {
+        font-size: 2rem;
+        width: 10rem;
+        height: 5rem;
+        font-weight: 400;
+    }
+
+    @media only screen and (min-width: 600px) {
+        font-size: 2.7rem;    
+        min-width: 18rem;
+        height: 6rem;
+        font-weight: 400;
+    }
+}
+
+.btn-medium {
+    font-weight: 400;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba($black-color, 0.2);
+
+    @media only screen and (max-width: 599px) {
+        padding: 0 1rem;
+        font-size: 1.2rem;
+        margin: 0 .5rem;
+        height: 3rem;
+    }
+    @media only screen and (min-width: 600px) {
+        padding: 0 1rem;
+        font-size: 2rem;
+        margin: 0 1rem;
+        height: 4rem;
+    }
+}
+
+.btn-submit {
+    margin-top: 2rem;
+    background-color: $button-submit-color;
+    color: $off-white-color;
+    max-width: 12ch;
+    margin-left: 21rem;
+}
+
+.btn-transparent {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+}

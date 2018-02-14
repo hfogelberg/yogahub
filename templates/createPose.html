@@ -1,0 +1,30 @@
+{{define "content"}}
+<div class="create-pose">
+  <h2 class="secondary-header">Create Pose</h2>
+
+  <form class="create-pose-form" enctype="multipart/form-data" action="/admin/poses/create" method="post">
+    <div>
+      <label for="title-en">English title</label>
+      <input type="text" name="title-en">
+    </div>
+    <div>
+      <label for="title-san">Sanskrit title</label>
+      <input type="text" name="title-san">
+    </div>
+    <div>
+      <label for="description">Instructions</label>
+      <textarea name="description"></textarea>
+    </div>
+    <div class="upload-image">
+      <input type="file" name="file" id="file" class="inputfile" accept=".svg"/>
+      <label for="file">
+        <img src="/public/img/upload.svg" class="icon">Choose a file</label>
+    </div>
+    </div>
+    <div id="pose-image"></div>
+    <div>
+      <input class="btn btn-medium btn-submit"type="submit" name="submit" value="Submit">
+    </div>
+  </form>
+</div>
+{{end}}

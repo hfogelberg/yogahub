@@ -1,0 +1,101 @@
+form {
+  margin: 0 auto;
+  width: 100%;
+}
+
+form div+div {
+  margin-top: 2rem;
+}
+
+form>div {
+  margin-bottom: .5rem;
+}
+
+form label {
+  display: inline-block;
+  width: 20rem;
+  text-align: right;
+  margin-right: 1rem;
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+}
+
+label,
+label>input {
+  font-size: 1.8em;
+  display: inline-block;
+  margin: 0;
+  line-height: 1.8rem;
+  height: 1.8rem;
+  vertical-align: top;
+}
+
+input,
+textarea {
+  width: 60%;
+  box-sizing: border-box;
+  border: 1px solid #999;
+  font-size: 1.2rem;
+  padding-left: .5rem;
+  padding-right: .5rem;
+  border-radius: 5px;
+}
+
+input[type="text"] {
+  line-height: 2.5rem
+}
+
+#file-input {
+  line-height: 1.8rem;
+  border: none;
+  text-align: center;
+  margin: auto;
+}
+
+/*
+input[type="checkbox"] {
+  line-height: 2em;
+  transform: scale(1.5);
+  padding-left: 10ch;
+}*/
+
+textarea {
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  vertical-align: top;
+  height: 10rem;
+}
+
+button#save {
+  margin-top: 1rem;
+  margin-left: 21rem;
+  font-size: 1.3rem;
+  height: 3.5rem;
+  width: 10rem;
+  color: $button-label-color;
+  background-color: $upload-button-color;
+
+  border-radius: 5px;
+   box-shadow: 0 10px 15px rgba($black-color, .5);
+}
+
+#radio-group .wrap {
+  display: inline-block;
+  margin: .5rem auto;
+  width: 60%;
+  box-sizing: border-box;
+  font-size: 1.8rem;
+  padding-left: .5rem;
+  padding-right: .5rem;
+  color: $primary-text-color;
+}
+
+/*#radio-group input[type="radio"] {
+  margin: 0.5em auto;  
+  width: 60%;
+  box-sizing: border-box;
+  font-size: 1.2em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  color: #34495e;
+}*/

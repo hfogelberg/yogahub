@@ -1,0 +1,35 @@
+.upload-image {
+  margin-left: 21rem;
+}
+
+.inputfile {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.inputfile+label {
+  text-align: center;
+  max-width: 90%;
+  font-size: 2.7rem;
+  color: $off-white-color;
+  font-weight: 400;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+  display: inline-block;
+  overflow: hidden;
+  padding: 1rem 2rem;
+  background-color: $upload-button-color;
+
+  border-radius: 5px;
+}
+
+.inputfile:focus+label,
+.inputfile+label:hover {
+  background-color: $upload-button-color;
+  padding-bottom: 1rem;
+}

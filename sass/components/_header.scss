@@ -1,0 +1,36 @@
+header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 7rem;
+  padding: 0.5rem 1.5rem;
+  background-color: $header-background-color;
+}
+
+.menu-bar {
+  width: 95vw;
+  height: 7rem;
+  background-color: $header-background-color;
+  color: $header-text-color;
+  display: flex;
+  line-height: 7rem;
+  list-style: none;
+  &__item {
+    &:nth-child(1) {
+      margin-right: auto;
+      padding-right: 2rem;
+    }
+    &--title {
+      font-size: 5rem;
+      color: $header-text-color !important;
+      font-weight: 700;
+    }
+    &--link {
+      font-size: 2rem;
+      color: $header-text-color !important;
+      font-weight: 400;
+      padding-right: 1rem;
+    }
+  }
+}
